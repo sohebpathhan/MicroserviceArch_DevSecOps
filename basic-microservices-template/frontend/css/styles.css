@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+}
+
+pre {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.item {
+  border-top: 1px solid #e5e7eb;
+  padding: 8px 0;
+}

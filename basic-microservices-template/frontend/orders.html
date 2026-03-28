@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders - Microservices Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Orders</h1>
+      <div class="row">
+        <a href="./index.html">Login</a>
+        <a href="./products.html">Products</a>
+      </div>
+
+      <section class="card">
+        <h2>Create Order</h2>
+        <input id="userId" type="number" placeholder="User ID (from login response)" />
+        <select id="productSelect"></select>
+        <input id="quantity" type="number" min="1" placeholder="Quantity" value="1" />
+        <button id="createOrderBtn">Create Order</button>
+      </section>
+
+      <section class="card">
+        <h2>All Orders</h2>
+        <button id="loadOrdersBtn">Refresh Orders</button>
+        <div id="orderList"></div>
+      </section>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/orders.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Microservices Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Products</h1>
+      <div class="row">
+        <a href="./index.html">Login</a>
+        <a href="./orders.html">Orders</a>
+      </div>
+
+      <section class="card">
+        <h2>Add Product</h2>
+        <input id="name" placeholder="Name" />
+        <input id="price" type="number" placeholder="Price" />
+        <input id="category" placeholder="Category" />
+        <button id="addProductBtn">Add Product</button>
+      </section>
+
+      <section class="card">
+        <h2>Product List</h2>
+        <button id="loadProductsBtn">Refresh Products</button>
+        <div id="productList"></div>
+      </section>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/products.js"></script>
+  </body>
+</html>
